@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+    form {
+        width: 30%;
+        margin: auto;
+        padding: 25px 16px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        font-family: Raleway, sans-serif;
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        box-sizing: border-box;
+        border: 1px solid blue;
+    }
+
+    button{
+        width: 100%;
+        margin-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        box-sizing: border-box;
+        border: 1px solid blue;
+        background-color: blue;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+</style>
+
 <body>
 
     <!-- Name, email, dob, password, weight -->
@@ -18,12 +58,12 @@
             <label for="">Email</label>
             <input type="email">
         </div>
-        
+
         <div>
             <label for="">Date</label>
             <input type="date" min="1990/01/01" max="2006/12/31">
         </div>
-        
+
         <div>
             <label for="">Password</label>
             <input type="password">
@@ -34,11 +74,14 @@
             <input type="number">
         </div>
 
+        <button>Submit</button>
+
     </form>
-    
+
 
 
 
 
 </body>
+
 </html>
